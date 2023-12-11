@@ -10,77 +10,83 @@
 </head>
 <body>
     <!--header-->
-    <header id="header" class="fixed">
-      <div class="h-section">
-          <nav class="navbar">
-              <ul>
-                  <li><a class='active' href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-          </nav>
-          <!--social-media links-->
-          <div class="header-social-links">
-              <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-              <a href="index.html.header-social-links"><i class="fa fa-bars" aria-hidden="true"></i></a>
-          </div>
-          
-      </div>
-      
-  </header>
+    <header class="header header--fixed">
+        <div class="header__section">
+            <nav class="header__navbar">
+                <ul class="header__navbar-ulist">
+                    <li class='header__navbar-list'><a class="header__navbar-link" href="index.html">Home</a></li>
+                    <li class="header__navbar-list"><a class="header__navbar-link" href="about.html">About</a></li>
+                    <li class="header__navbar-list"><a class="header__navbar-link" href="resume.html">Resume</a></li>
+                    <li class="header__navbar-list"><a class="header__navbar-link header__navbar-link--active" href="portfolio.html">Portfolio</a></li>
+                    <li class="header__navbar-list"><a class="header__navbar-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--social-media links-->
+            <div class="header__media-icons">
+                <a class="header__media-icons-link" href="https://twitter.com/HiwotAddis8917"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a class="header__media-icons-link" href="https://t.me/newlife_1010"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a class="header__media-icons-link" href="https://www.linkedin.com/in/hiwot-addis-453139286/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a class="header__media-icons-link" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>    
+        </div>    
+    </header>
     <!--main-->
     <main class="main">
-        <h2 class="section-title">Portfolio</h2>
-        <q cite="https://www.goodreads.com/quotes/772887-the-only-way-to-do-great-work-is-to-love">
+        <h2 class="main__section-title">Portfolio</h2>
+        <q class="main__quote" cite="https://www.goodreads.com/quotes/772887-the-only-way-to-do-great-work-is-to-love">
           The only way to do great work is to love what you do.<br><em>- Steve Jobs</em>
         </q>
-        <p class="Welcome">Welcome to my portfolio section. Here you can find my past works and projects. I hope you enjoy browsing through them.</p>
-        <div class="lists">
-            <ul >
-                <li>All</li>
-                <li>UI/UX</li>
-                <li>Web</li>
+        <p class="main__welcome">Welcome to my portfolio section. Here you can find my past works and projects. I hope you enjoy browsing through them.</p>
+        <div class="main__lists">
+            <ul class="main__list">
+                <li class="main__list-item">All</li>
+                <li class="main__list-item">UI/UX</li>
+                <li class="main__list-item">Web</li>
             </ul>
           </div>
 
-        <div>
-          <section class="images-section-1">
-            <figure class="fig1">
-              <a href="https://www.apple.com/"><img src="images/applepage.png"  alt="" ></a>
-              <figcaption><h5>Web :- Apple page</h5></figcaption>
+        <div class="main__images">
+          <section class="main__images-section-1">
+            
+            <figure class="main__images-figure main__images-figure1">
+              <a class="main__figure-link" href="https://www.apple.com/"><img src="images/applepage.png"  alt="" ></a>
+              <figcaption><h5 class="main__figure-caption">Web :- Apple page</h5></figcaption>
             </figure>
-            <figure class="fig2">
-              <a href="images/puppy-lovers-page-design.jpg"><img src="images/puppy-lovers-page-design.jpg"  alt=""></a>
-              <figcaption><h5>Web :- Puppy page</h5></figcaption>
+
+            <figure class="main__images-figure main__images-figure2">
+              <a class="main__figure-link"  href="images/puppy-lovers-page-design.jpg"><img src="images/puppy-lovers-page-design.jpg"  alt=""></a>
+              <figcaption><h5 class="main__figure-caption">Web :- Puppy page</h5></figcaption>
             </figure>
-            <figure class="fig3">
-              <a href="https://www.figma.com/file/Pf9fGOGKeA9E6seM3Nito9/own-page?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/ownpage.png"  alt=""></a>
-              <figcaption><h5>UI/UX :- coffee menu design</h5></figcaption>
+
+            <figure class="main__images-figure main__images-figure3">
+              <a class="main__figure-link"  href="https://www.figma.com/file/Pf9fGOGKeA9E6seM3Nito9/own-page?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/ownpage.png"  alt=""></a>
+              <figcaption><h5 class="main__figure-caption">UI/UX :- coffee menu design</h5></figcaption>
             </figure>
           </section>
-          <section class="images-section-2">
-            <figure class="fig4">
-              <a href="https://www.figma.com/file/UtrnR0VUP2vpBwN73JIpqm/Untitled?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/sport.png"  alt="" ></a>
-              <figcaption><h5>UI/UX :- boxchampy</h5></figcaption>
+
+          <section class="main__images-section-2">
+
+            <figure class="main__images-figure main__images-figure4">
+              <a class="main__figure-link"  href="https://www.figma.com/file/UtrnR0VUP2vpBwN73JIpqm/Untitled?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/sport.png"  alt="" ></a>
+              <figcaption><h5 class="main__figure-caption">UI/UX :- boxchampy</h5></figcaption>
             </figure>
-            <figure class="fig5">
-              <a href="https://www.southernmostbeachresort.com/dine/southernmost-beach-cafe/"><img src="images/sothermost-resourt.png"  alt=""></a>
-              <figcaption><h5>UI/UX :- southernmost-beach-cafe</h5></figcaption>
+
+            <figure class="main__images-figure main__images-figure5">
+              <a class="main__figure-link"  href="https://www.southernmostbeachresort.com/dine/southernmost-beach-cafe/"><img src="images/sothermost-resourt.png"  alt=""></a>
+              <figcaption><h5 class="main__figure-caption">UI/UX :- southernmost-beach-cafe</h5></figcaption>
             </figure>
-            <figure class="fig6">
-              <a href="https://www.figma.com/file/RTv8BcpsFLHaVrHFPoyLjk/NoStock-login-page-challenge?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/loginpage.png" alt=""></a>
-              <figcaption><h5>UI/UX :- login page</h5></figcaption>
+
+            <figure class="main__images-figure main__images-figure6">
+              <a class="main__figure-link"  href="https://www.figma.com/file/RTv8BcpsFLHaVrHFPoyLjk/NoStock-login-page-challenge?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/loginpage.png" alt=""></a>
+              <figcaption><h5 class="main__figure-caption">UI/UX :- login page</h5></figcaption>
             </figure>
+
           </section>
         </div>
         
     </main>
     <!--footer-->
-    <footer id="footer">
+    <footer class="footer">
         <p>&copy; Copyright <strong><span>Hiwot</span></strong>. All Rights Reserved</p>
     </footer>
 </body>

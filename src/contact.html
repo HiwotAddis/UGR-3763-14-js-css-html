@@ -9,74 +9,72 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,500,500i,600,600i,700,700i%7CPoppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
-    <header id="header" class="fixed">
-        <div class="h-section">
-            <nav class="navbar">
-                <ul>
-                    <li><a class='active' href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <header class="header header--fixed">
+        <div class="header__section">
+            <nav class="header__navbar">
+                <ul class="header__navbar-ulist">
+                    <li class='header__navbar-list'><a class="header__navbar-link" href="index.html">Home</a></li>
+                    <li class="header__navbar-list"><a class="header__navbar-link" href="about.html">About</a></li>
+                    <li class="header__navbar-list"><a class="header__navbar-link" href="resume.html">Resume</a></li>
+                    <li class="header__navbar-list"><a class="header__navbar-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="header__navbar-list"><a class="header__navbar-link header__navbar-link--active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <!--social-media links-->
-            <div class="header-social-links">
-                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="index.html.header-social-links"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            </div>
-            
-        </div>
-        
+            <div class="header__media-icons">
+                <a class="header__media-icons-link" href="https://twitter.com/HiwotAddis8917"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a class="header__media-icons-link" href="https://t.me/newlife_1010"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a class="header__media-icons-link" href="https://www.linkedin.com/in/hiwot-addis-453139286/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a class="header__media-icons-link" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>    
+        </div>    
     </header>
 
     <!--main-->
-    <main class="main">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-content" >
-            <section class="information">
-                <div class="Location">
-                    <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Location:</h4>
-                    <p>2R2J+M5H, Goro, Ethiopia</p>
+    <main class="contacts">
+        <h2 class="contacts__section-title">Contact</h2>
+        <div class="contacts__content content" >
+            <section class="content__information information">
+                <div class="information__location">
+                    <h4><i class="fa fa-map-marker information__h4-fa" aria-hidden="true"></i> Location:</h4>
+                    <p class="information__p">2R2J+M5H, Goro, Ethiopia</p>
                 </div>
-                <div class="Email">
-                    <h4><i class="fa fa-envelope-o" aria-hidden="true"></i>Email:</h4>
-                    <p>addishiwot963@gmail.com</p>
+                <div class="information__email">
+                    <h4><i class="fa fa-envelope-o information__h4-fa" aria-hidden="true"></i>Email:</h4>
+                    <p class="information__p">addishiwot963@gmail.com</p>
                 </div>
-                <div class="Call">
-                    <h4> <i class="fa fa-mobile" aria-hidden="true"></i> Call:</h4>
-                    <p>+251 961 256116</p>
+                <div class="information__call">
+                    <h4> <i class="fa fa-mobile information__h4-fa" aria-hidden="true"></i> Call:</h4>
+                    <p class="information__p">+251 961 256116</p>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1575.9551525801999!2d38.82808179196432!3d9.000525399929563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9b6053e87c49%3A0x5752c9d2f249c0ce!2sAbel%20wood%20and%20metal%20manufacturing!5e0!3m2!1sen!2sus!4v1700834094906!5m2!1sen!2sus" width="350" height=290 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                <iframe class="information__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1575.9551525801999!2d38.82808179196432!3d9.000525399929563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9b6053e87c49%3A0x5752c9d2f249c0ce!2sAbel%20wood%20and%20metal%20manufacturing!5e0!3m2!1sen!2sus!4v1700834094906!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
             </section>
-            <form action="#" class="information">
-                <div class="row">
-                    <div>
+            <form action="#" class="content__information information">
+                <div class="information__row row form__div">
+                    <div class="row__name">
                         <label for="name">Your Name</label>
-                        <input type="text" name="name"  id="name" required>
+                        <input class="information__input" type="text" name="name"  id="name" required>
                     </div>
-                    <div>
+                    <div class="row__email form__div">
                         <label for="email">Your Email</label>
-                        <input type="email" name="email" id="email" required>
+                        <input class="information__input" type="email" name="email" id="email" required>
                     </div>
                 </div>
-                <div>
+                <div class="information__subject form__div">
                     <label for="subject">Subject</label>
-                    <input type="text"  name="subject" id="subject" required>
+                    <input class="information__input" type="text"  name="subject" id="subject" required>
                 </div>
-                <div>
+                <div class="information__message form__div">
                     <label for="message">Message</label>
-                    <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
+                    <textarea class="information__input form-control" name="message" id="message" rows="10" required></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="information__button">Send Message</button>
             </form>
         </div>
     </main>
 
     <!--footer-->
-    <footer id="footer">
+    <footer class="footer">
         <p>&copy; Copyright <strong><span>Hiwot</span></strong>. All Rights Reserved</p>
     </footer>  
 </body>
