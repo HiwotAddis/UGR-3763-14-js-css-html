@@ -11,7 +11,10 @@ body {
   max-width: 100%;
   font-size: 2.5vh;
 }
-
+a{
+  
+  font-weight: bold;
+}
 main {
   margin-top: 20vh;
 }
@@ -59,11 +62,13 @@ img{
   margin-left: 30vw;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .header__navbar-list {
   position: relative;
   padding: 10px 0 10px 28px;
+  transition: 0.7s ease;
 }
 .header__navbar-link{
   align-items: center;
@@ -71,6 +76,7 @@ img{
   font-weight: 600;
   position: relative;
   text-decoration: none;
+  color: #080808;;
 }
 .header__navbar-link:before {
   content: "";
@@ -90,14 +96,19 @@ img{
 }
 
 .header__navbar-link:visited {
-  color: #635f5f;
+  color: #080808;
 }
 
 .header__navbar-link:focus {
-  color: #6f6f6f;
+  color: #080808;
+}
+.header__navbar-link:hover ,.header__media-icons-link:hover{
+  color: #f106a3;
+  font-weight: bold;
+  
 }
 .header__navbar-link:active,.header__media-icons-link:active {
-  color: #e24bb0;
+  color: #e74fb4;
 }
 .header__media-icons {
   padding-right: 10px;
@@ -108,12 +119,16 @@ img{
   flex: 0 1 auto;
   color: #6f6f6f;
 }
-
+.navbar-burger,.group{
+  display: none;
+}
 @media (max-width: 769px) {
-  .header__navbar ul {
+  .header__navbar-ulist {
       display: none;
   }
-
+  .navbar-burger{
+      display: inline-block;
+  }
   .hiwot:before {
       content: "";
       background: rgba(255, 255, 255, 0.5);
@@ -126,9 +141,16 @@ img{
 }
 @media (min-width: 770px) and (max-width: 1024px) {
   .header__navbar-ulist{
-      margin-left: 0;
+      margin-left: 0vw;
+  }
+  .navbar-burger{
+      display: none;
   }
 }
+
+
+
+  
 
 /*=====Footer=====*/
 
@@ -136,7 +158,6 @@ img{
   background: rgb(243, 235, 242);
   box-shadow: 25px 0px 0 0 rgba(0, 0, 0, 0.08);
   padding: 30px 0;
-  
   color: #222222;
   text-align: center;
   z-index: 2;
@@ -200,10 +221,7 @@ img{
 
 .hiwot__about-button:hover {
   background-color: #f5069d;
-}
-
-.hiwot__about-button:visited {
-  background: #c950a1;
+  color: #fff;
 }
 
 .hiwot__about-button:active {
@@ -562,7 +580,7 @@ font-size: 2.3vh;
 }
 .information__input {
   width: 100%;
-  padding: 2.5vh 10vh;
+  padding: 2.5vh 2vh;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -582,9 +600,15 @@ font-size: 2.3vh;
   background: #e24bb0;
   border: none;
 }
-
+.information__button:hover{
+  background-color: #f106a3;
+}
 .form__div{
   margin: 2vh 0;
+}
+::placeholder{
+  color: #c5c0c0;
+  font-size: medium;
 }
 
 @media (min-width: 450px) {
